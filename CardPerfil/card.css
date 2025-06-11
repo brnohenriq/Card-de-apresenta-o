@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(155deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card{
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    transition: transform 0.3 ease;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.card-header{
+    background: linear-gradient(135deg, #ff6b6b, #ffa500);
+    padding: 40px 20px 20px;
+}
+
+.profile-image{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.profile-image:hover{
+    transform: scale(1.1)
+}
+
+.card-body{
+    padding: 30px 20px;
+}
+
+.name{
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.title{
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.description{
+    color: #777;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.stats{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.stat{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.number{
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.label{
+    font-size: 12px;
+    color: #999;
+    margin-top: 5px;
+}
+
+.social-buttons{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.btn{
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.btn-primary{
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+}
+
+.btn-primary:hover{
+    transform: translateY(-2px)
+}
+
+.btn-secondary{
+    background: transparent;
+    color: #667eea;
+    border: 2px solid #667eea;
+}
+
+.btn-secondary:hover{
+    background: #667eea;
+    color:  white;
+    transform: translateY(-2px)
+}
+
+@media (max-width: 470px) {
+  .card {
+    margin: 10px;
+  }
+
+  .social-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 200px;
+  }
+}
+
+
+
+
+
+
